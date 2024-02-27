@@ -79,7 +79,7 @@ Split and merge HSV Image
 
 
 ### iv)Access rows and columns
-
+```
     import random
     import cv2
     image=cv2.imread('images.jpg',1)
@@ -92,14 +92,14 @@ Split and merge HSV Image
     cv2.imshow('natural',image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-
+```
 ### OUTPUT 
 
 ![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/29a58fd7-6d7f-4ffb-82d6-ef3fcefe62b3)
 
 
 ### v)Cut and paste portion of image
-
+```
    import cv2
    image=cv2.imread('images.jpg',1)
    image=cv2.resize(image,(400,400))
@@ -108,13 +108,13 @@ Split and merge HSV Image
    cv2.imshow('natural',image)
    cv2.waitKey(0)
    cv2.destroyAllWindows()
-
+```
 ### OUTPUT
 
 ![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/1c8bdacc-990d-4ddf-adfa-abd950bad17a)
 
 ### vi) BGR and RGB to HSV and GRAY
-
+```
 import cv2
 img = cv2.imread('images.jpg',1)
 img = cv2.resize(img,(300,200))
@@ -129,15 +129,40 @@ gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+```
+### OUTPUT
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/b328331c-a2f7-4b35-b77d-482552d28fd2)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/0a643231-0519-4217-8e74-6feded114557)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/4b9326dc-1343-418b-8a90-c1d3d51faf2c)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/8533b3bb-a62a-4916-80a8-562bd412a035)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/7b200a5e-f9be-41b3-acc6-3854c7c16d59)
+
+
+### vii) HSV to RGB and BGR
+```
+import cv2
+img = cv2.imread('images.jpg')
+img = cv2.resize(img,(300,200))
+img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+cv2.imshow('Original HSV Image',img)
+RGB = cv2.cvtColor(img,cv2.COLOR_HSV2RGB)
+cv2.imshow('2HSV2BGR',RGB)
+BGR = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
+cv2.imshow('HSV2RGB',BGR)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
 
 ### OUTPUT
 
 
 
 
-### vii) HSV to RGB and BGR
-<br>
-<br>
 
 ### viii) RGB and BGR to YCrCb
 <br>
