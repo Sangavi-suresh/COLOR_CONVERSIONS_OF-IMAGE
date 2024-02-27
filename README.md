@@ -1,4 +1,4 @@
-![307217437-701c00d5-76d0-4a10-a74f-0ba58420a05a](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/445279eb-78bc-4479-93c4-ade81ddb5f9d)# COLOR_CONVERSIONS_OF-IMAGE
+# COLOR_CONVERSIONS_OF-IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
 
@@ -160,24 +160,86 @@ cv2.destroyAllWindows()
 
 ### OUTPUT
 
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/e816abb7-ca10-4500-9d78-2011ac8d126d)
 
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/5dbb8777-b706-482b-95d7-3edf6b6cd3d4)
 
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/f87fe894-a67a-4769-9160-92e882af48bb)
 
 
 ### viii) RGB and BGR to YCrCb
-<br>
-<br>
+```
+import cv2
+img = cv2.imread('images.jpg')
+img = cv2.resize(img,(300,200))
+cv2.imshow('Original RGB Image',img)
+YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
+cv2.imshow('RGB-2-YCrCb',YCrCb1)
+YCrCb2 = cv2.cvtColor(img, cv2.COLOR_RGB2YCrCb)
+cv2.imshow('BGR-2-YCrCb',YCrCb2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+### OUTPUT
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/ff5f46b2-65ed-466d-878d-c3d9c867221b)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/fc3140a8-edbf-424a-bb42-3d52f7549d0f)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/fd1ac8b2-72f0-4b6b-ab8a-19c0c5e02956)
+
 
 ### ix) Split and merge RGB Image
-<br>
-<br>
+```
+import cv2
+img = cv2.imread('images.jpg',1)
+img = cv2.resize(img,(300,200))
+R = img[:,:,2]
+G = img[:,:,1]
+B = img[:,:,0]
+cv2.imshow('R-Channel',R)
+cv2.imshow('G-Channel',G)
+cv2.imshow('B-Channel',B)
+merged = cv2.merge((B,G,R))
+cv2.imshow('Merged RGB image',merged)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+### OUTPUT
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/7202f7a6-3235-4a40-98fb-cbca61404de6)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/d6e714bc-fec7-4337-8e1f-9bd1331d8cd8)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/ffea9028-43ae-408a-9e51-bf9fd937da78)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/9b4aeb30-e837-447f-a6bd-d2464ba59627)
 
 ### x) Split and merge HSV Image
-<br>
-<br>
+```
+import cv2
+img = cv2.imread("images.jpg",1)
+img = cv2.resize(img,(300,200))
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+H,S,V=cv2.split(img)
+cv2.imshow('Hue',H)
+cv2.imshow('Saturation',S)
+cv2.imshow('Value',V)
+merged = cv2.merge((H,S,V))
+cv2.imshow('Merged',merged)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+### OUTPUT
 
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/daebecff-e02d-4660-ab5a-ba6e75a2a9ed)
 
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/10f31d28-a179-4dd3-96f3-75fd2d195c5f)
 
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/0fa5ba4d-10c3-460c-b632-ed823cd840bd)
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/67f81c4a-2190-4026-a284-248b566e23a6)
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed between RGB, HSV and YCbCr color models successfully using the python program.
