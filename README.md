@@ -95,17 +95,45 @@ Split and merge HSV Image
 
 ### OUTPUT 
 
-![Uploading 307217437-701c00d5-76d0-4a10-a74f-0ba58420a05a.png…]()
-
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/29a58fd7-6d7f-4ffb-82d6-ef3fcefe62b3)
 
 
 ### v)Cut and paste portion of image
-<br>
-<br>
+
+   import cv2
+   image=cv2.imread('images.jpg',1)
+   image=cv2.resize(image,(400,400))
+   tag =image[130:200,110:190]
+   image[110:180,120:200] = tag
+   cv2.imshow('natural',image)
+   cv2.waitKey(0)
+   cv2.destroyAllWindows()
+
+### OUTPUT
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/1c8bdacc-990d-4ddf-adfa-abd950bad17a)
 
 ### vi) BGR and RGB to HSV and GRAY
-<br>
-<br>
+
+import cv2
+img = cv2.imread('images.jpg',1)
+img = cv2.resize(img,(300,200))
+cv2.imshow('Original Image',img)
+hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+cv2.imshow('BGR2HSV',hsv1)
+hsv2 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+cv2.imshow('RGB2HSV',hsv2)
+gray1 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+cv2.imshow('BGR2GRAY',gray1)
+gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+cv2.imshow('RGB2GRAY',gray2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+### OUTPUT
+
+
+
 
 ### vii) HSV to RGB and BGR
 <br>
