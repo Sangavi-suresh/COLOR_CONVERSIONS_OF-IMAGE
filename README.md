@@ -1,4 +1,4 @@
-# COLOR_CONVERSIONS_OF-IMAGE
+![307217437-701c00d5-76d0-4a10-a74f-0ba58420a05a](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/445279eb-78bc-4479-93c4-ade81ddb5f9d)# COLOR_CONVERSIONS_OF-IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
 
@@ -44,22 +44,60 @@ Split and merge HSV Image
 
 ### i) Read and display the image
 
-<br>
-<br>
+    import cv2
+    image=cv2.imread('images.jpg',1)
+    image=cv2.resize(image,(400,300))
+    cv2.imshow('natural',image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+### OUTPUT
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/46b97dc0-2f8d-4dde-9e61-0be6bf5fcab7)
+
 
 ### ii)Write the image
 
-<br>
-<br>
+    import cv2
+    image=cv2.imread('images.jpg',0)
+    cv2.imwrite('natural.jpg',image)
+
+### OUTPUT
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/0469e549-2130-4f5b-ae98-9ae7a25c64ac)
+
 
 ### iii)Shape of the Image
 
-<br>
-<br>
+    import cv2
+    image=cv2.imread('images.jpg',1)
+    print(image.shape)
+
+###  OUTPUT
+
+![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/ad69e405-1f96-4b0a-933a-c548bf8d514a)
+
 
 ### iv)Access rows and columns
-<br>
-<br>
+
+    import random
+    import cv2
+    image=cv2.imread('images.jpg',1)
+    image=cv2.resize(image,(400,400))
+    for i in range (150,200):
+      for j in range(image.shape[1]):
+          image[i][j]=[random.randint(0,255),
+                       random.randint(0,255),
+                       random.randint(0,255)] 
+    cv2.imshow('natural',image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+### OUTPUT 
+
+![Uploading 307217437-701c00d5-76d0-4a10-a74f-0ba58420a05a.png…]()
+
+
 
 ### v)Cut and paste portion of image
 <br>
