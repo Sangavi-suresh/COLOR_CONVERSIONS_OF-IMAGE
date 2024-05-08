@@ -36,8 +36,8 @@ Split and Merge RGB Image
 Split and merge HSV Image
 
 ##### Program:
-### Developed By:
-### Register Number: 
+### Developed By: SANGAVI SURESH
+### Register Number:  212222230130
 
 
 ## Output:
@@ -53,7 +53,7 @@ Split and merge HSV Image
 
 ### OUTPUT
 
-![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/46b97dc0-2f8d-4dde-9e61-0be6bf5fcab7)
+![308425963-f92cce43-70c6-4df3-b7ba-1be6e7677cce](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/760af16a-cbb5-4146-af49-3d912ebd3718)
 
 
 ### ii)Write the image
@@ -95,7 +95,8 @@ Split and merge HSV Image
 ```
 ### OUTPUT 
 
-![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/29a58fd7-6d7f-4ffb-82d6-ef3fcefe62b3)
+![308426138-478d4be2-9c38-47d3-ba4b-854a80686c49](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/adac1b23-6cf4-4213-ae30-56aff3f6b818)
+
 
 
 ### v)Cut and paste portion of image
@@ -111,7 +112,8 @@ Split and merge HSV Image
 ```
 ### OUTPUT
 
-![image](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/1c8bdacc-990d-4ddf-adfa-abd950bad17a)
+![308426200-762947c3-a5c4-4135-8450-9cd8cedcb063](https://github.com/Sangavi-suresh/COLOR_CONVERSIONS_OF-IMAGE/assets/118541861/b776b11e-600b-47a0-b106-0775908ebe8a)
+
 
 ### vi) BGR and RGB to HSV and GRAY
 ```
